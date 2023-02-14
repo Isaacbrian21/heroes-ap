@@ -1,0 +1,26 @@
+
+
+
+ 
+    
+    
+    
+<mat-expansion-panel hideToggle  expanded="true" *ngIf="messageService.getMessages().length"> 
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Messages
+      </mat-panel-title>
+      <mat-panel-description>
+    {{messageService.getMessages().length}} record(s)    
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <p>
+        <button mat-raised-button  color="warn" (click)="messageService.clear()" >Clear Messages</button>
+    </p>
+
+    <div *ngFor="let message of messageService.getMessages()" >
+
+        <p>{{message}}</p>
+    </div>
+  </mat-expansion-panel>

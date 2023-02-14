@@ -1,7 +1,20 @@
 <mat-toolbar color="primary">
     <span>{{title}}</span>
+    <span class="example-spacer" ></span>
+
+    <button
+    mat-icon-button
+    class="exanple-icon favorite-icon"
+    matTooltip="Infos"
+    arial-label="Example icon-button with heart icon"
+    >
+        
+        <mat-icon class="aaa" >sports_martial_arts</mat-icon>
+    </button>
 </mat-toolbar>
 
+
 <div class="content">
-    <app-heroes></app-heroes>
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
 </div>
