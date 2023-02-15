@@ -1,0 +1,12 @@
+.layout{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    
+
+    &__aa{
+        width: 250px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}

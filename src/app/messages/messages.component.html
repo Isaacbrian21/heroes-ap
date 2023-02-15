@@ -4,9 +4,10 @@
  
     
     
-    
-<mat-expansion-panel hideToggle  expanded="true" *ngIf="messageService.getMessages().length"> 
-    <mat-expansion-panel-header>
+    <section class="maina">
+
+      <mat-expansion-panel hideToggle  expanded="true" *ngIf="messageService.getMessages().length"> 
+        <mat-expansion-panel-header>
       <mat-panel-title>
         Messages
       </mat-panel-title>
@@ -24,3 +25,5 @@
         <p>{{message}}</p>
     </div>
   </mat-expansion-panel>
+
+    </section>

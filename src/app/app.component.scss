@@ -1,7 +1,14 @@
 .content {
     margin: 20px;
+    width: 100%;
 }
 
 .example-spacer{
     flex: 1 1 auto;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }

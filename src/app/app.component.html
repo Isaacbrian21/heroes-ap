@@ -1,20 +1,27 @@
+<section class="main">
 <mat-toolbar color="primary">
     <span>{{title}}</span>
-    <span class="example-spacer" ></span>
+    <span class="example-spacer"></span>
 
-    <button
-    mat-icon-button
-    class="exanple-icon favorite-icon"
-    matTooltip="Infos"
-    arial-label="Example icon-button with heart icon"
-    >
-        
-        <mat-icon class="aaa" >sports_martial_arts</mat-icon>
+
+    <button mat-icon-button class="exanple-icon favorite-icon" matTooltip="DashBoard" routerLink="/dashboard"
+        arial-label="Example icon-button with heart icon">
+
+        <mat-icon class="aaa">dashboard</mat-icon>
+    </button>
+    <button mat-icon-button class="exanple-icon favorite-icon" matTooltip="Heroes" routerLink="/heroes"
+        arial-label="Example icon-button with heart icon">
+
+        <mat-icon class="aaa">sports_martial_arts</mat-icon>
     </button>
 </mat-toolbar>
 
 
 <div class="content">
     <router-outlet></router-outlet>
+    <br>
     <app-messages></app-messages>
 </div>
+
+
+</section>

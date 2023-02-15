@@ -1,0 +1,8 @@
+<h1>DashBoard</h1>
+
+<div class="layout">
+
+    <mat-card class="layout__aa" *ngFor="let hero of heroes" routerLink="/heroes/{{hero.id}}">
+        <mat-card-title>{{hero.name}}</mat-card-title>
+    </mat-card>
+</div>
