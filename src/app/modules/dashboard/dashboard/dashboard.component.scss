@@ -5,8 +5,14 @@
     
 
     &__aa{
-        width: 250px;
+        width: 200px;
         margin-top: 10px;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 503px){
+    .layout{
+        justify-content: center;
     }
 }

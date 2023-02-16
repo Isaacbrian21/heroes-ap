@@ -4,23 +4,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroDetailComponent } from './modules/hero-detail/hero-detail.componente';
-import { HeroesComponent } from './modules/heroes/heroes.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MessagesComponent } from './core/components/messages/messages.component'
-import { DashboardComponent } from './modules/dashboard/dashboard.component';
-import { MaterialModule } from './core/material-module/material.module';
+
+import { MaterialModule } from './material/material.module';
 import { CoreModule } from './core/core.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { HeroesModule } from './modules/heroes/heroes.module';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
-    HeroDetailComponent,
+
     MessagesComponent,
-    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,11 @@ import { CoreModule } from './core/core.module';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    CoreModule
+    CoreModule,
+
+    //feature
+    DashboardModule,
+    HeroesModule
 
 
   ],
