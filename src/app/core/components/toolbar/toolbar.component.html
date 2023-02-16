@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+    <span>{{title}}</span>
+    <span class="example-spacer"></span>
+
+
+    <button *ngFor="let menu of menuItens" aria-label="menu.toolTipText" mat-icon-button
+        class="exanple-icon favorite-icon" matTooltip="menu.toolTipText" [routerLink]="[menu.routerLink]"
+        arial-label="Example icon-button with heart icon">
+
+        <mat-icon class="aaa">{{menu.icon}}</mat-icon>
+    </button>
+</mat-toolbar>
